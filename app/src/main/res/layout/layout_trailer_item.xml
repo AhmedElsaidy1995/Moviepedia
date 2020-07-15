@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardMaxElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/trailerImageView"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_135sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dfgfh" />
+
+        <TextView
+            android:id="@+id/trailerTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/cardview_light_background"
+            android:gravity="center"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:text="Official Trailer"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_shadow_start_color"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="@dimen/_10ssp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/trailerImageView"
+            app:layout_constraintStart_toStartOf="@+id/trailerImageView"
+            app:layout_constraintTop_toBottomOf="@+id/trailerImageView" />
+
+        <ImageView
+            android:id="@+id/trailerPlayImageView"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/trailerImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/trailerImageView"
+            app:layout_constraintTop_toTopOf="@+id/trailerImageView"
+            app:srcCompat="@drawable/ic_baseline_play_circle_filled_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
